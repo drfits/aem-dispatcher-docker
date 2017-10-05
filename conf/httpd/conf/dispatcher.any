@@ -83,7 +83,7 @@
       # dispatcher will store files relative to this directory and subsequent
       # requests may be "declined" by the dispatcher, allowing the webserver
       # to deliver them just like static files.
-      /docroot "C:/inetpub/wwwroot"
+      /docroot "/etc/httpd/dispatcher_cache"
 
       # Sets the level upto which files named ".stat" will be created in the 
       # document root of the webserver. When an activation request for some 
