@@ -6,7 +6,7 @@ MAINTAINER Evgeniy Fitsner <drfits@drfits.com>
 RUN yum -y install httpd mod_ssl mod_so mod_security openssl; yum clean all; systemctl enable httpd.service
 
 # download dispatcher module
-RUN curl -s https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher/_jcr_content/top/download_9/file.res/dispatcher-apache2.4-linux-x86-64-ssl-4.2.2.tar.gz -O
+RUN curl -s https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher/_jcr_content/top/download_9/file.res/dispatcher-apache2.4-linux-x86-64-ssl-4.2.3.tar.gz -O
 RUN mkdir dispatcher
 RUN tar -C dispatcher -zxvf dispatcher-apache2.*.tar.gz
 
